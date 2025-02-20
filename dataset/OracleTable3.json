@@ -1,0 +1,22 @@
+{
+	"name": "OracleTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Oraclelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "HR",
+			"table": "DB_CONTROL"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

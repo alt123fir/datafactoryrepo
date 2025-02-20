@@ -1,0 +1,17 @@
+{
+	"name": "Oracledepttable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Oraclelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "HR",
+			"table": "DEPARTMENTS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

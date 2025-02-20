@@ -1,0 +1,42 @@
+{
+	"name": "blbdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sample4.csv",
+				"folderPath": "blbdirectory1",
+				"container": "blbcontainer1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "138126",
+				"type": "String"
+			},
+			{
+				"name": "T/T ADVANCE NET 30",
+				"type": "String"
+			},
+			{
+				"name": "HSINCHE",
+				"type": "String"
+			},
+			{
+				"name": "Sanmina-SCI Corp (Cons) 356",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

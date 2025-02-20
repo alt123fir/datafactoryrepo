@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sqlserverdataadls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "sample",
+			"table": "data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

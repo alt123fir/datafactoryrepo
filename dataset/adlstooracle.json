@@ -1,0 +1,17 @@
+{
+	"name": "adlstooracle",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Oraclelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "HR",
+			"table": "FINANCE_DETAILS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

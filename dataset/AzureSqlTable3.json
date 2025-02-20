@@ -1,0 +1,25 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sqlserverdataadls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tabletest": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "access",
+			"table": {
+				"value": "@dataset().tabletest",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

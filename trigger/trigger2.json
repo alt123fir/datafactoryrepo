@@ -1,0 +1,24 @@
+{
+	"name": "trigger2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "logicwithprocedurepiprline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/blbcontainer1/blobs/2025-02-07/",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/0de67174-c59d-494b-aa19-29ac7bafde78/resourceGroups/res_practise1/providers/Microsoft.Storage/storageAccounts/reslearnblb1",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

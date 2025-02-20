@@ -1,0 +1,21 @@
+{
+	"name": "azuredataFactorylearn1",
+	"properties": {
+		"globalParameters": {
+			"adlsglobalparam": {
+				"type": "string",
+				"value": "https://reslearnadls.dfs.core.windows.net/"
+			},
+			"adlsglobalparam2": {
+				"type": "string",
+				"value": "https://resadlsaccount2.dfs.core.windows.net/"
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ac038ce2-a150-4fa1-a4c2-082e78906f98",
+		"tenantId": "17eaa40b-ba58-476e-ad90-e1c53d256732"
+	}
+}

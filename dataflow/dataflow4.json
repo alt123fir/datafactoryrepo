@@ -1,0 +1,74 @@
+{
+	"name": "dataflow4",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "AzureSemptable",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "adlsfinancedataset",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "window1"
+				},
+				{
+					"name": "rank1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          EMPLOYEE_ID as decimal(6,0),",
+				"          FIRST_NAME as string,",
+				"          LAST_NAME as string,",
+				"          EMAIL as string,",
+				"          PHONE_NUMBER as string,",
+				"          HIRE_DATE as timestamp,",
+				"          JOB_ID as string,",
+				"          SALARY as decimal(8,2),",
+				"          COMMISSION_PCT as decimal(2,2),",
+				"          MANAGER_ID as decimal(6,0),",
+				"          DEPARTMENT_ID as decimal(4,0)",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> source1",
+				"source1 window(over(DEPARTMENT_ID),",
+				"     asc(EMPLOYEE_ID, true),",
+				"     newcolumn = rowNumber()) ~> window1",
+				"window1 rank(asc(DEPARTMENT_ID, true),",
+				"     output(new_rank as long),",
+				"     dense: true) ~> rank1",
+				"rank1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          description as string,",
+				"          industry as string,",
+				"          level as string,",
+				"          size as string,",
+				"          line_code as string,",
+				"          value as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}
