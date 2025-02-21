@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azuredataFactorylearn1"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"Oraclelinkedservice_connectionString": {
+			"value": ""
+		},
+		"Paramadlslinkedservice_accountKey": {
+			"value": ""
+		},
+		"Sqlserverdataadls_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://reslearnadls.dfs.core.windows.net/"
+		},
+		"Paramadlslinkedservice_properties_typeProperties_url": {
+			"value": "@{linkedService().url}"
+		},
+		"Sqlserverdataadls_properties_typeProperties_server": {
+			"value": "dbserverlear.database.windows.net"
+		},
+		"Sqlserverdataadls_properties_typeProperties_database": {
+			"value": "dblearn"
+		},
+		"Sqlserverdataadls_properties_typeProperties_userName": {
+			"value": "dbadmin"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/0de67174-c59d-494b-aa19-29ac7bafde78/resourceGroups/res_practise1/providers/Microsoft.Storage/storageAccounts/reslearnblb1"
+		}
+	}
+}

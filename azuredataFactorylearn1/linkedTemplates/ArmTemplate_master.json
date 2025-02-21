@@ -1,0 +1,179 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "azuredataFactorylearn1"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"Oraclelinkedservice_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Oraclelinkedservice'"
+		},
+		"Paramadlslinkedservice_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'Paramadlslinkedservice'"
+		},
+		"Sqlserverdataadls_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Sqlserverdataadls'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://reslearnadls.dfs.core.windows.net/"
+		},
+		"Paramadlslinkedservice_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "@{linkedService().url}"
+		},
+		"Sqlserverdataadls_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "dbserverlear.database.windows.net"
+		},
+		"Sqlserverdataadls_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "dblearn"
+		},
+		"Sqlserverdataadls_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "dbadmin"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/0de67174-c59d-494b-aa19-29ac7bafde78/resourceGroups/res_practise1/providers/Microsoft.Storage/storageAccounts/reslearnblb1"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "azuredataFactorylearn1_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"Paramadlslinkedservice_accountKey": {
+						"value": "[parameters('Paramadlslinkedservice_accountKey')]"
+					},
+					"Sqlserverdataadls_password": {
+						"value": "[parameters('Sqlserverdataadls_password')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"Paramadlslinkedservice_properties_typeProperties_url": {
+						"value": "[parameters('Paramadlslinkedservice_properties_typeProperties_url')]"
+					},
+					"Sqlserverdataadls_properties_typeProperties_server": {
+						"value": "[parameters('Sqlserverdataadls_properties_typeProperties_server')]"
+					},
+					"Sqlserverdataadls_properties_typeProperties_database": {
+						"value": "[parameters('Sqlserverdataadls_properties_typeProperties_database')]"
+					},
+					"Sqlserverdataadls_properties_typeProperties_userName": {
+						"value": "[parameters('Sqlserverdataadls_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "azuredataFactorylearn1_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"Oraclelinkedservice_connectionString": {
+						"value": "[parameters('Oraclelinkedservice_connectionString')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'azuredataFactorylearn1_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "azuredataFactorylearn1_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'azuredataFactorylearn1_ArmTemplate_1')]"
+			]
+		},
+		{
+			"name": "azuredataFactorylearn1_ArmTemplate_3",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_3.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"trigger2_properties_typeProperties_scope": {
+						"value": "[parameters('trigger2_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'azuredataFactorylearn1_ArmTemplate_2')]"
+			]
+		}
+	]
+}

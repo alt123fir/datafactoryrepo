@@ -1,0 +1,10 @@
+{
+	"adlsglobalparam": {
+		"type": "string",
+		"value": "https://reslearnadls.dfs.core.windows.net/"
+	},
+	"adlsglobalparam2": {
+		"type": "string",
+		"value": "https://resadlsaccount2.dfs.core.windows.net/"
+	}
+}
