@@ -1,0 +1,88 @@
+event,tag,sport,sport_code,sport_url
+Men's Individual,archery,Archery,ARC,https://olympics.com/en/paris-2024/sports/archery
+Women's Individual,archery,Archery,ARC,https://olympics.com/en/paris-2024/sports/archery
+Men's Team,archery,Archery,ARC,https://olympics.com/en/paris-2024/sports/archery
+Women's Team,archery,Archery,ARC,https://olympics.com/en/paris-2024/sports/archery
+Mixed Team,archery,Archery,ARC,https://olympics.com/en/paris-2024/sports/archery
+Men's Team,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's All-Around,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Floor Exercise,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Pommel Horse,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Rings,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Vault,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Parallel Bars,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Men's Horizontal Bar,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's Team,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's All-Around,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's Vault,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's Uneven Bars,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's Balance Beam,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Women's Floor Exercise,artistic-gymnastics,Artistic Gymnastics,GAR,https://olympics.com/en/paris-2024/sports/artistic-gymnastics
+Duet,artistic-swimming,Artistic Swimming,SWA,https://olympics.com/en/paris-2024/sports/artistic-swimming
+Team,artistic-swimming,Artistic Swimming,SWA,https://olympics.com/en/paris-2024/sports/artistic-swimming
+Men's 100m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 200m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 400m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 800m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 1500m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 5000m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+"Men's 10,000m",athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Marathon,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 3000m Steeplechase,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 110m Hurdles,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 400m Hurdles,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's High Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Pole Vault,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Long Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Triple Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Shot Put,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Discus Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Hammer Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Javelin Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Decathlon,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 20km Race Walk,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 4 x 100m Relay,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's 4 x 400m Relay,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 100m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 200m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 400m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 800m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 1500m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 5000m,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+"Women's 10,000m",athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Marathon,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 3000m Steeplechase,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 100m Hurdles,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 400m Hurdles,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's High Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Pole Vault,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Long Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Triple Jump,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Shot Put,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Discus Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Hammer Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Javelin Throw,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's Heptathlon,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 20km Race Walk,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 4 x 100m Relay,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Women's 4 x 400m Relay,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+4 x 400m Relay Mixed,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Marathon Race Walk Relay Mixed,athletics,Athletics,ATH,https://olympics.com/en/paris-2024/sports/athletics
+Men's Singles,badminton,Badminton,BDM,https://olympics.com/en/paris-2024/sports/badminton
+Women's Singles,badminton,Badminton,BDM,https://olympics.com/en/paris-2024/sports/badminton
+Men's Doubles,badminton,Badminton,BDM,https://olympics.com/en/paris-2024/sports/badminton
+Women's Doubles,badminton,Badminton,BDM,https://olympics.com/en/paris-2024/sports/badminton
+Mixed Doubles,badminton,Badminton,BDM,https://olympics.com/en/paris-2024/sports/badminton
+Men,basketball,Basketball,BKB,https://olympics.com/en/paris-2024/sports/basketball
+Women,basketball,Basketball,BKB,https://olympics.com/en/paris-2024/sports/basketball
+Men,3x3-basketball,3x3 Basketball,BK3,https://olympics.com/en/paris-2024/sports/3x3-basketball
+Women,3x3-basketball,3x3 Basketball,BK3,https://olympics.com/en/paris-2024/sports/3x3-basketball
+Men,beach-volleyball,Beach Volleyball,VBV,https://olympics.com/en/paris-2024/sports/beach-volleyball
+Women,beach-volleyball,Beach Volleyball,VBV,https://olympics.com/en/paris-2024/sports/beach-volleyball
+Men's 51kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's 57kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's 63.5kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's 71kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's 80kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's 92kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
+Men's +92kg,boxing,Boxing,BOX,https://olympics.com/en/paris-2024/sports/boxing
